@@ -1,0 +1,177 @@
+/*body {                /*be careful with this*/
+/*    display:flex;
+/*    flex-direction: column;
+} */
+
+/*header starts*/
+.header {
+    display:flex;
+    justify-content:space-around;
+    background-color:#1F2937;
+}
+
+.logo {
+    font-size: 24px;
+    color:#F9FAF8;
+    padding-right:120px;
+}
+
+ul {
+    display:flex;
+    list-style-type: none;
+    gap:30px;
+    font-size: 18px;
+    color:#F9FAF8;
+}
+/*header ends*/
+
+
+/*first part starts*/
+.master-container-one {
+    display:flex;
+    /*justify-content: center; doesnt work so removed*/
+    align-items: center;
+    background-color: #1F2937;
+    padding-top: 30px;
+    padding-bottom: 70px;
+}
+
+.c-one {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    color:#F9FAF8 ;
+    font-size: 18px;
+    padding-left:270px;
+} /*applying flex stretches out things a little compared to not applying, but results still achievable without applying (with condition no flex 1 declared in the other box;even though the items are supposed to be in column!)*/
+
+.main-text {
+    font-size: 48px;
+    font-weight: 800;
+} /*overrides certain info in the flex container like the size of the fonts of the text below it*/
+
+.button-one {
+    background-color:#3882F6;
+    color:white;
+    width:120px;
+    /*flex-shrink:0; not flex item*/
+    padding:10px;
+    border-radius: 25px;
+    border-color: black;
+}
+
+.c-two {
+    display:flex;
+    flex:1; /*declared this so easier to move the items in the master flexboxs around using padding-left. space-around,center; not really effective */
+    padding-left:200px;
+}
+/*first part ends*/
+
+/*second part starts*/
+.master-container-two {
+    display:flex;
+    justify-content: center; /*if without the whole sub-one wont be centered*/
+    padding-left:150px;
+    padding-right:150px;  /*padding left and right forces more space to be created for the sub items*/
+}
+
+.random-info {
+    text-align: center;
+    font-size: 36px;
+    font-weight:;
+    padding:5px;
+}
+
+.sub-one {
+    display:flex;
+    flex-wrap: wrap; /*if not done so, the words wont appear below the image*/
+    /*justify-content: space-between; /*not really necessary*/
+    width:200px;    /*width declaration from previous exercise, it will force the words to clump up as intended*/
+    padding: 50px; /*margin declaration from previous exercise . margin replaced with padding-- same effect.*/
+    /*background-color: tomato;*/
+}
+
+.two {
+    font-size: 20px;
+}
+
+.blue-box {
+    height:220px;
+    width:220px;
+}
+/* second part ends*/
+
+/*third part starts*/
+.master-container-three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:30px;
+    background-color:#e5e7eb;
+    padding-left: -20px;
+}
+
+.quote {
+    width:700px;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color:#1F2937;
+}
+
+.thor {
+    padding-left: 500px;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*third part ends*/
+
+/*fourth part starts*/
+.master-container-four {
+    display:flex;
+    justify-content: center;
+    padding:70px;
+}
+
+.funky-container {
+    display:flex;
+    width:1000px; /*always experiment with width, as it can, there is no need to create another flexbox just to force 2 lines apart*/
+    height:100px;
+    border-radius: 25px;
+    justify-content: space-evenly;
+    background-color:#3882F6;
+    color: white;
+    padding: 30px;
+    font-size:18px ;
+}
+
+
+.button-two {
+    height:50px;
+    width:100px;
+    border-radius: 12px;
+    color:white;
+    background-color: #3882F6;
+    border-style: double;
+    border-color: white;
+    font-weight:700;
+}
+
+.funky-container-two {  
+    padding-top:20px /*forces the button to go center! */
+}
+
+.cta {
+    font-weight: 800;
+}
+
+footer {
+    display:flex;
+    padding:30px;
+    justify-content: center;
+    align-items: center;
+    background-color:#1F2937;
+    color: white;
+    font-size: 20px;
+}
